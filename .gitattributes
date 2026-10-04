@@ -1,0 +1,2 @@
+sample-data/taxi_trips.parquet filter=lfs diff=lfs merge=lfs -text
+sample-data/bike_trips.duckdb filter=lfs diff=lfs merge=lfs -text
