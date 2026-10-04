@@ -2,6 +2,28 @@
 
 Demo material for a hands-on DuckDB talk. The numbered directories follow the talk's topic order and contain the examples and explanations for revisiting the demos afterward.
 
+## Downloading the Sample Data
+
+The large sample files `sample-data/taxi_trips.parquet` and `sample-data/bike_trips.duckdb` are stored using Git LFS (Large File Storage). Install Git LFS before cloning so Git downloads the actual data files rather than just their small pointer files.
+
+On macOS with Homebrew:
+
+```sh
+brew install git-lfs
+git lfs install
+git clone https://github.com/ogeisser/duckdb-talk.git
+```
+
+For other platforms, see the [Git LFS installation instructions](https://github.com/git-lfs/git-lfs#installing).
+
+If you have already cloned the repository, install and initialize Git LFS as above, then run this command from the repository directory:
+
+```sh
+git lfs pull
+```
+
+The two files require approximately 710 MiB of download. Use a Git clone with Git LFS to obtain the complete sample data.
+
 ## Demo Overview
 
 | Topic | What it covers | Material available |
